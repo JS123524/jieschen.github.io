@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: whitesmoke;
   margin: 0;
@@ -77,6 +83,10 @@ body {
   padding: 0;
 }
 
+#projects article {
+  margin-top: 1.2rem;
+}
+
 #projects article a {
   display: inline-block;
   background: linear-gradient(150deg, skyblue, whitesmoke);
@@ -92,11 +102,10 @@ body {
 
 #projects article a:hover,
 #projects article a:focus {
-  /* border-color: black;
-  text-decoration: underline; */
   outline: none;
   border-color: skyblue;
   box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.35);
+  text-decoration: underline;
 }
 
 .project1-images {
@@ -128,7 +137,7 @@ body {
 #contact-form {
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -145,6 +154,7 @@ body {
 
 #contact-form input,
 #contact-form textarea {
+  height: 100%;
   width: 100%;
   max-width: 500px;
   padding: 0.7rem 0.6rem;
@@ -185,4 +195,16 @@ body {
   background: linear-gradient(130deg, skyblue 70%, white);
   color: black;
   box-shadow: 0 0 0 3px rgba(140, 222, 255, 0.35);
+}
+
+#form-status {
+  min-height: 1.5rem;
+  margin-top: 0.75rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#form-status.show {
+  opacity: 1;
 }
