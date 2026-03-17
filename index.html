@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -27,13 +35,6 @@
           University majoring in Computer Science. My interests include
           programming, 3D modeling, and game development.
         </p>
-        <figure>
-          <img
-            src="https://via.placeholder.com/200"
-            alt="placeholder profile photo"
-          />
-          <figcaption>Photo of Jiesui Chen</figcaption>
-        </figure>
       </section>
       <section id="work">
         <h2>Experience and Skills</h2>
@@ -59,26 +60,190 @@
           <div class="project1-images">
             <figure>
               <img
-                src="images/project1i.png"
+                src="images/sim_ini.png"
                 alt="Initial simulation state at tick 0"
               />
               <figcaption>
                 Initial state of the 2D resource competition simulation at tick
-                0. White agents are distributed across the 50x50 resource grid,
+                0. White agents are distributed across the 50x43 resource grid,
                 with the control panel shown on the right.
               </figcaption>
             </figure>
             <figure>
-              <img
-                src="images/project1e.png"
-                alt="Simulation state at tick 559"
-              />
+              <img src="images/sim_end.png" alt="Simulation state at tick 50" />
               <figcaption>
-                Simulation state at tick 559. Red and white agents show changes
-                in health and resource distribution across the 50x50 grid, with
+                Simulation state at tick 50. Red and white agents show changes
+                in health and resource distribution across the 50x43 grid, with
                 the control panel on the right.
               </figcaption>
             </figure>
+          </div>
+
+          <div id="carouselIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/sim_0t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 0"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 0: Initial simulation state with randomly distributed
+                    resources and agents.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_5t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 5"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 5: Early resource competition begins as underfed agents
+                    start moving toward richer neighboring cells.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_10t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 10"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 10: Local agent movement increases, producing early
+                    shifts in spatial distribution.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_15t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 15"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 15: Resource competition intensifies as more agents
+                    cluster around higher-resource cells.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_20t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 20"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 20: Death feedback begins reshaping the resource field
+                    as dead agents return value to occupied cells.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_25t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 25"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 25: Resource-rich patches and agent redistribution
+                    become more apparent across the grid.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sim_30t.png"
+                  class="d-block w-100"
+                  alt="Simulation screenshot at tick 30"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Tick 30: Later-stage simulation state showing the combined
+                    effects of competition, movement, and death feedback.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
           <a
             href="https://github.com/JS123524/2D-Resource-Competition-Simulation"

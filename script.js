@@ -54,7 +54,13 @@ const handleSubmit = (event) => {
     return;
   }
 
-  if (message !== "" && message.length < 10) {
+  if (message === "") {
+    showMessage("Please enter your message.");
+    messageInput.focus();
+    return;
+  }
+
+  if (message.length < 10) {
     showMessage("Please enter a longer message.");
     messageInput.focus();
     return;

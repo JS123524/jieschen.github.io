@@ -22,6 +22,7 @@ body {
   justify-content: center;
 
   font-family: "Times New Roman", Times, serif;
+  z-index: 1000;
 }
 
 .menu h1 {
@@ -34,7 +35,7 @@ body {
 .menu ul {
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px 0 5px;
+  margin-bottom: 5px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -61,7 +62,7 @@ body {
 }
 
 .info {
-  margin-top: 150px;
+  margin-top: 160px;
   padding: 0 1rem;
 }
 
@@ -72,7 +73,7 @@ body {
   padding: 1.5rem;
   border: 2px solid black;
   border-radius: 12px;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 160px;
 }
 
 .info section h2 {
@@ -109,7 +110,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem 0 0;
+  margin: 1rem 0;
 }
 
 .project1-images figure {
@@ -125,9 +126,35 @@ body {
 }
 
 .project1-images figcaption {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   padding: 0 0.2rem;
   font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#carouselIndicators {
+  background-color: black;
+  overflow: hidden;
+  border: 2px solid skyblue;
+  border-radius: 16px;
+  margin: 1rem 0.2rem 0;
+}
+
+#carouselIndicators img {
+  display: block;
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.carousel-caption p {
+  margin: 0;
+  color: white;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -267,10 +294,10 @@ body {
   }
 
   .info {
-    margin-top: 140px;
+    margin-top: 150px;
   }
 
   .info section {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 150px;
   }
 }
